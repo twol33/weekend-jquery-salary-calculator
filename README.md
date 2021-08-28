@@ -13,9 +13,9 @@ No files have been provided (just instructions.md and a readme.md). Instead of f
 ## Target List
 
 - [x] create input area and buttons that correlate
-- [ ] lay out html that displays information input
-- [ ] create table that stores input
-- [ ] create montly total display
+- [x] lay out html that displays information input
+- [x] create table that stores input
+- [x] create montly total display
 - [ ] add an action to button that inputs the information 
 - [ ] add action to the delete button
 - [ ] display the total of salary inputs 
