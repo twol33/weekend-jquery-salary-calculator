@@ -17,8 +17,8 @@ No files have been provided (just instructions.md and a readme.md). Instead of f
 - [x] create table that stores input
 - [x] create montly total display
 - [x] add an action to button that inputs the information 
-- [ ] add action to the delete button
-- [ ] display the total of salary inputs 
+- [x] add action to the delete button
+- [ ] display the total of salary inputs as temporary montly total
 - [ ] create red background when total exceeds limit
 - [ ] style the table
 
