@@ -13,17 +13,17 @@
 <body>
     <h1>Salary Calculator</h1>
     <h2>Add Employee</h2>
-    <input type="text" class="employee-FirstName" placeholder="First Name"> 
-    <input type="text" class="employee-LastName" placeholder="Last Name">
-    <input type="number" class="employee-Id" placeholder="ID">
-    <input type="text" class="employee-Title" placeholder="Title">
-    <input type="number" class="employee-Salary" placeholder="Annual Salary">
+    <input type="text" id="employee-FirstName" placeholder="First Name"> 
+    <input type="text" id="employee-LastName" placeholder="Last Name">
+    <input type="number" id="employee-Id" placeholder="ID">
+    <input type="text" id="employee-Title" placeholder="Title">
+    <input type="number" id="employee-Salary" placeholder="Annual Salary">
     <button id="submit-Button">Submit</button>
 
     <h2>Employees</h2>
     <table>
         <thead>
-            <tr>
+            <tr id="table-header">
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>ID</th>
@@ -31,14 +31,14 @@
                 <th>Annual Salary</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="input-Info">
             <tr>
-                <td>Jon</td>
+                <!-- <td>Jon</td>
                 <td>Smith</td>
                 <td>11111</td>
                 <td>Director</td>
                 <td>80000</td>
-                <td><button id="remove-Button">Remove</button></td>
+                <td><button id="remove-Button">Remove</button></td> -->
             </tr>
         </tbody>
     </table>

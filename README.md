@@ -16,7 +16,7 @@ No files have been provided (just instructions.md and a readme.md). Instead of f
 - [x] lay out html that displays information input
 - [x] create table that stores input
 - [x] create montly total display
-- [ ] add an action to button that inputs the information 
+- [x] add an action to button that inputs the information 
 - [ ] add action to the delete button
 - [ ] display the total of salary inputs 
 - [ ] create red background when total exceeds limit
