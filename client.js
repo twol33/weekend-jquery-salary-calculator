@@ -5,9 +5,8 @@ $(document).ready(readyNow)
 function readyNow() {
     $( '#submit-Button' ).on( 'click', addToTable )
         console.log('submit clicker working');
-    
 
-    $( '#remove-Button' ).on( 'click', deleteFromTable )
+    $( '#input-Info' ).on( 'click', '.remove-Button', deleteFromTable )
         console.log('remove clicker working');
         
 }
@@ -22,18 +21,22 @@ function addToTable(){
     let rowClass = ' ';
 
     $('#input-Info').append(`
-        <tr id=${rowClass}>
+        <tr class="${rowClass}">
             <td>${empFirstName}</td>
             <td>${empLastName}</td>
             <td>${emopID}</td>
             <td>${empTitle}</td>
             <td>${empSalary}</td>
-            <td><button id="remove-Button">Remove</button></td>
+            <td><button class="remove-Button">Remove</button></td>
         </tr>
     `);
 }
+// function addButtonToDOM() {
+//     $( '#remove-Button' ).on( 'click', deleteFromTable )
+//         console.log('remove clicker working');
+// }
 
-function deleteFromTable(params) {
-    console.log('removed from table');
-    
+function deleteFromTable() {
+    let inputInfo = $(this).parent().parent()
+    inputInfo.remove()
 }
