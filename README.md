@@ -12,7 +12,7 @@ No files have been provided (just instructions.md and a readme.md). Instead of f
 
 ## Target List
 
-- [ ] create input area and buttons that correlate
+- [x] create input area and buttons that correlate
 - [ ] lay out html that displays information input
 - [ ] create table that stores input
 - [ ] create montly total display
