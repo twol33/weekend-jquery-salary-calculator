@@ -2,13 +2,21 @@
     color: red;
     background-color: red;
 }
-
-h1 {
+h2{
     text-align: center;
 }
 
-  #color-Red{
-    text-align: right;
+h3{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color: lightgray;
+}
+
+#color-Red{
+    text-align: left;
+    width: 25%;
 }
 
 #table-header{
@@ -31,6 +39,6 @@ table, td, th {
   }
   
   th, td {
-    padding: 15px;
+    padding: 10px;
   }
 
