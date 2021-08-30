@@ -1,7 +1,6 @@
 $(document).ready(readyNow)
     console.log('JS ready');
     
-const totalCost = 0;
 let amountTotal = [];
 
 function readyNow() {
@@ -11,7 +10,6 @@ function readyNow() {
     $( '#input-Info' ).on( 'click', '.remove-Button', deleteFromTable )
         console.log('remove clicker working')
 
-    calculateTotal()
 }
 
 function addToTable(){
@@ -31,6 +29,10 @@ function addToTable(){
         salary: empSalary
     }
 
+    // if( empSalary > 20000 ){
+    //     rowClass = 'red';
+    // }
+
     amountTotal.push(tableInputs);
 
     $('#input-Info').append(`
@@ -43,13 +45,16 @@ function addToTable(){
             <td><button class="remove-Button">Remove</button></td>
         </tr>
     `);
-    calculateTotal()
-    $( '#employee-FirstName' ).val( '' );
+
+    $('#employee-FirstName').val( '' );
     $('#employee-LastName').val( '' );
     $('#employee-Id').val( '' );
     $('#employee-Title').val( '' );
     $('#employee-Salary').val( '' );
+
+    calculateTotal()
 }
+
 
 function deleteFromTable() {
     let inputInfo = $(this).parent().parent()
@@ -59,12 +64,15 @@ function deleteFromTable() {
 function calculateTotal() {
     let costTotal = 0
     for( let i=0; i<amountTotal.length; i++){
-        costTotal += parseInt(amountTotal[i].salary);
+        costTotal += parseInt(amountTotal[i].salary); 
     }
-
+    
     let display = $( '#cost-Total' );
     display.empty();
-    display.append( costTotal )
+    display.append( costTotal );
 
+    if( costTotal > 20000){
+       return $('#color-Red').css( 'background-color', 'red' );
+    }
     console.log( 'this is the total cost:', costTotal );
 }

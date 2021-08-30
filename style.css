@@ -12,3 +12,24 @@ table, td, th {
   th, td {
     padding: 15px;
   }
+
+  .red {
+      color: red;
+      background-color: red;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+    #color-Red{
+      text-align: right;
+  }
+
+  #table-header{
+      background-color: lightgray;
+  }
+
+  .remove-Button{
+      background-color: lightgray;
+  }
