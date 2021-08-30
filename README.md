@@ -16,4 +16,4 @@ To take the inputs, a set of input fields we created to accept the input of info
 ## Acknowledgement
 Thanks to Prime Digital Academy who equipped and helped me to make this application a reality.
 ## Support
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
